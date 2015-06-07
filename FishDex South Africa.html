@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border-collapse:collapse;
+}
+th, td {
+    padding: 5px;
+}
+body,td,th {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+}
+a.hover {cursor:pointer;}
+</style>
+<title>FishDex</title>
+<script type="text/javascript">
+    function calculate() {
+		var myBox1 = document.getElementById('fishlength').value;	
+		var math1 = Math.pow(myBox1, 2.89);
+		var math2 = 0.0233;
+		var result = document.getElementById('result');	
+		var myResult = math1 * math2;
+		result.value = myResult;
+      
+		
+	}</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body onload="familyGroups()">
+
+
+
+<br>
+<script>
+
+function listingFish(){
+document.write("<br><div align='center'><img src='images/logos/fishdexlogo.jpg'/><br><br><font size='48'><i>South African FishDex</i></div></font><br><div align='center'><table border='0px' cellspacing='0' cellpadding='0'><tr><td><b>Sort Fish:</b>&nbsp;&nbsp;</td><td align='center'><a class='hover' onMouseDown='listingFish()'>Fish List</a>,&nbsp;&nbsp;</td><td><a onMouseDown='familyGroups()'>Family Groups</a></td></tr></table></div><br>");
+document.write("<table border='1px' width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width='5%' align='center'>ID</td><td width='25%' align='center'>Picture</td><td width='20%' align='center'>Scientific Name</td><td width='30%' align='center'>Common Name</td><td width='20%' align='center'>Family</td></tr></table>");
+
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","fishdatabase.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+
+var x=xmlDoc.getElementsByTagName("fish");
+for (i=0;i<x.length;i++)
+  { document.write("<table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width='5%'>");
+  document.write(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+document.write("</td><td width='25%'>");
+document.write("<img width='240px' src=");
+document.write(x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue);
+
+document.write("></td><td width='20%'><i>");
+document.write("<a class='hover' onmousedown='showFish()'>");
+
+  document.write(x[i].getElementsByTagName("scienceName")[0].childNodes[0].nodeValue);
+document.write("</a></i></td><td width='30%'>");
+  document.write(x[i].getElementsByTagName("commonName")[0].childNodes[0].nodeValue);
+document.write("</td><td width='20%'>");
+  document.write(x[i].getElementsByTagName("family")[0].childNodes[0].nodeValue);
+
+
+
+
+
+
+
+    document.write("</tr></td>");  
+document.write("</table><br>");
+
+  
+  
+  }}
+  function familyGroups(){
+	  document.write("<br><div align='center'><img src='images/logos/fishdexlogo.jpg'/><br><br><font size='48'><i>South African FishDex</i></div></font><br><div align='center'><table border='0px' cellspacing='0' cellpadding='0'><tr><td><b>Sort Fish:</b>&nbsp;&nbsp;</td><td align='center'><a class='hover' onMouseDown='listingFish()'>Fish List</a>,&nbsp;&nbsp;</td><td><a onMouseDown='familyGroups()'>Family Groups</a></td></tr></table></div><br>");
+document.write("<table border='1px' width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width='5%' align='center'>ID</td><td width='25%' align='center'>Picture</td><td width='20%' align='center'>Scientific Name</td><td width='30%' align='center'>Common Name</td><td width='20%' align='center'>Family</td></tr></table>");
+
+  document.write("<table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td align='center'><img src='images/logos/Albulidae.jpg'/><br>Albulidae</td><td align='center'><img src='images/logos/Ariidae.jpg'/>Ariidae</td><td align='center'><img src='images/logos/Callorhinchidae.jpg'/>Callorhinchidae</td><td align='center'><img src='images/logos/Carangidae-1.jpg'/>Carangidae</td><td><img src='images/logos/Carcharhinidae.jpg'/>Carcharhinidae</td></tr><tr><td align='center'><img src='images/logos/Cheilodactylidae.jpg'/>Cheilodactylidae</td><td align='center'><img src='images/logos/Corypaenidae.jpg'/>Corypaenidae</td><td align='center'><img src='images/logos/Dasyatidae.jpg'/>Dasyatidae</td><td align='center'><img src='images/logos/Dichistiidae.jpg'/>Dichistiidae</td><td align='center'><img src='images/logos/Dinopercidae.jpg'/>Dinopercidae</td></tr><tr><td align='center'><img src='images/logos/Elopidae.jpg'/>Elopidae</td><td align='center'><img src='images/logos/Sciaenidae.jpg'/>Sciaenidae</td><td><img src='images/logos/Scombridae.jpg'/>Scombridae</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td></tr></table>");
+  }
+  
+  </script>
+
+
+<script>
+
+function showFish() {
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","fishdatabase.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+
+var x=xmlDoc.getElementsByTagName("fish");
+for (i=0;i<x.length;i++)
+  { 
+  document.write("<table><tr>");
+  document.write("<td><b>ID</b>&nbsp;");
+  document.write(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+  document.write("</td></tr><td><i>");
+  document.write(x[i].getElementsByTagName("scienceName")[0].childNodes[0].nodeValue);
+  document.write("</i></td></tr>");
+    document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("commonName")[0].childNodes[0].nodeValue);
+  document.write("</td></tr><tr><td><b>Family</b>&nbsp;");
+  document.write(x[i].getElementsByTagName("family")[0].childNodes[0].nodeValue);
+  document.write("</i></td></tr>");
+  
+  
+  document.write("<tr><td><img src=");
+    document.write(x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue);
+  document.write("/><br>");
+  document.write(x[i].getElementsByTagName("pictureCredit2")[0].childNodes[0].nodeValue);
+  document.write("<img src=");
+    document.write(x[i].getElementsByTagName("picture2")[0].childNodes[0].nodeValue);
+  document.write("/><br>");
+    document.write(x[i].getElementsByTagName("pictureCredit")[0].childNodes[0].nodeValue);
+  document.write("</i></td></tr>");
+  
+    document.write("<tr><td><b>Zones</b>&nbsp;");
+    document.write(x[i].getElementsByTagName("zones")[0].childNodes[0].nodeValue);
+    document.write("</tr></td>");
+
+    document.write("<tr><td><b>South African Distribution</b>&nbsp;");
+    document.write(x[i].getElementsByTagName("saDistro")[0].childNodes[0].nodeValue);
+    document.write("</tr></td>");
+document.write("<tr><td><b>More</b>&nbsp; Global Distribution, Movement, Feeding, Reproduction, Fishery, Biological Reference Points, Stock Status, Vulnerability, Regulations, Management, Research, Global Distribution</b>&nbsp;");
+
+
+    document.write("</td></tr><tr><td><b>WoRMS</b>&nbsp;<a href=");
+    document.write(x[i].getElementsByTagName("worm")[0].childNodes[0].nodeValue);
+	    document.write("target='_blank' />");
+    document.write(x[i].getElementsByTagName("worm")[0].childNodes[0].nodeValue);  
+    document.write("</a><br><b>Fishbase</b>&nbsp;<a href=");
+    document.write(x[i].getElementsByTagName("fishbase")[0].childNodes[0].nodeValue);
+	    document.write("target='_blank' />");
+    document.write(x[i].getElementsByTagName("fishbase")[0].childNodes[0].nodeValue);
+    document.write("</tr></td>");  
+document.write("</table><br>");
+document.write("<table width='80%' border='0'><tr><th>Fish Length (cm)</th><th>Fish Weight (g)</th></tr><tr><td><input id='fishlength' type='text' oninput='calculate()' /></td><td><input id='result' /></td></tr></table>");
+}}
+</script>
+	<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div align="center"><i>South African FishDex >°))))彡 Vancouver Aquarium 2015 FishHackathon</i></div></td>
+  </tr>
+</table>
+<br><br>
+
+
+
+</script>
+
+</body>
+</html>

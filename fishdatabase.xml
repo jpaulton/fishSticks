@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+	<fish id="Albulaoligolepis">
+	<id>1</id>
+<scienceName>Albula oligolepis</scienceName>
+		<family>Albulidae</family>
+<commonName>Bonefish, Smallscale bonefish</commonName>
+<picture>
+images/Albulaoligolepis.jpg
+</picture>
+
+<pictureCredit2> </pictureCredit2>
+<picture2>
+images/Albulaoligolepis2.jpg
+</picture2>
+<pictureCredit>Randall, J.E.</pictureCredit>
+<zones>EC, KZN, MOZ</zones>
+<saDistro>A. vulpes previously thought to be widespread throughout tropical seas (Smith 2003) but may actually be comprised of as many as eight or nine genetically distinct species, with some overlap in ranges (Colborn et al. 2001, Wallace and Tringali 2010). A. vulpes now reported to be restricted to tropical and subtropical northwest Atlantic (Adams et al. 2012b). Previous records of A. vulpes in SA waters most likely refer to the newly described A. oligolepis (Hidaka et al. 2008). Extends south to East London (van der Elst 1993)</saDistro>
+<global>Much confusion surrounds the taxonomy of the Albula species found in SA waters. Previously referred to as A. vulpes (Smith and Heemstra 1991), then described as A. glossodonta (Heemstra and Heemstra 2004), now believed to be A. oligolepis (Hidaka et al. 2008), which has an Indo-West Pacific distribution including SA, MOZ, Mauritius, Seychelles, Somalia, Yemen, Oman, India, western Thailand and north eastern Australia (Froese and Pauly 2012)</global>
+<worm><![CDATA[ http://www.marinespecies.org/aphia.php?p=taxdetails&id=398341 ]]></worm>
+<fishbase><![CDATA[ http://www.fishbase.ca/summary/Albula-oligolepis.html ]]></fishbase>
+<number1>2.89</number1>
+<number2>0.0233</number2>
+	</fish>
+<fish>
+
+<id>2</id>
+<pictureCredit2> </pictureCredit2>
+
+<family>Ariidae</family>
+<scienceName>Galeichthys ater</scienceName>
+<commonName>Black seacatfish, Black seabarbel</commonName>
+<research>COMPILER: ST Fennessy
+REVIEWER: BQ Mann
+DATE OF REPORT COMPLETION: March 2013</research>
+<global>Endemic to the entire south coast of SA between Margate in KZN and Swakopmund in NAM (Tilney 1990, Smith and Heemstra 1991). Previously confused with Galeichthys trowi, a newly described species occurring off KZN and Transkei (Kulongowski 2010)</global>
+<saDistro>Exclusively marine, primarily in the region between East London and Table Bay (Kulongowski 2010)</saDistro>
+<zones>WC, EC, KZN</zones>
+<movement>Unknown
+Juveniles migrate from the intertidal to shallow subtidal reefs before recruitment into the fishery. No evidence of a breeding migration evident (Tilney 1990). Recapture data on the ORI Tagging Project is primarily for Galeichthys trowi, which has been shown to be a highly resident species (B. Mann, ORI, pers. obs)</movement>
+<picture>images/Galeichthysater.gif</picture>
+<picture2>images/Galeichthysater2.gif</picture2>
+<pictureCredit>SFSA</pictureCredit>
+<worm><![CDATA[ http://www.marinespecies.org/aphia.php?p=taxdetails&id=217653 ]]></worm>
+<fishbase><![CDATA[ http://www.fishbase.ca/summary/Galeichthys-ater.html ]]></fishbase>
+
+
+</fish>
+
+<fish>
+<pictureCredit2> </pictureCredit2>
+
+<id>3</id>
+<family>Ariidae</family>
+<scienceName>Galeichthys feliceps</scienceName>
+<commonName>White seacatfish, White seabarbel</commonName>
+<global>Endemic from Walvis Bay in NAM round to Mbashe River in EC (Heemstra and Heemstra 2004, Kulongowski 2010)</global>
+<zones>NAM, NC, WC, EC</zones>
+<saDistro>Most abundant along the southern SA coast from Cape Town to Port Alfred (Kulongowski 2010)</saDistro>
+<worm><![CDATA[ http://www.marinespecies.org/aphia.php?p=taxdetails&id=217654 ]]></worm>
+<fishbase><![CDATA[ http://www.fishbase.ca/summary/Galeichthys-feliceps.html ]]></fishbase>
+
+<picture2>images/Galeichthysfeliceps.gif</picture2>
+<picture>images/Galeichthysfeliceps2.gif</picture>
+
+
+
+<pictureCredit>Alvheim, O./Institute of Marine Research (IMR)</pictureCredit>
+
+
+</fish>
+
+
+<fish>
+<pictureCredit2> </pictureCredit2>
+
+<id>4</id>
+<family>Callorhinchidae</family>
+<scienceName>Callorhinchus capensis</scienceName>
+<commonName>St Joseph, Elephant fish, Cape elephant fish, Silver trumpeter</commonName>
+<global>Endemic, NAM to KZN (Compagno et al. 1986, 1989, Krefft 1990)
+</global>
+<zones>Endemic, NAM to KZN (Compagno et al. 1986, 1989, Krefft 1990)</zones>
+<saDistro>Primarily found along the Namibian, western and southern coast of SA, rare off KZN (Compagno et al. 1989, 1991, Freer 1992)</saDistro>
+
+
+
+<pictureCredit2>SPSA</pictureCredit2>
+
+<pictureCredit>Le Noury, P.</pictureCredit>
+
+<picture>images/Callorhinchuscapensis2.gif</picture>
+<picture2>images/Callorhinchuscapensis.gif</picture2>
+
+
+<worm><![CDATA[ http://www.marinespecies.org/aphia.php?p=taxdetails&id=221460 ]]></worm>
+<fishbase><![CDATA[ http://www.fishbase.ca/summary/Galeichthys-feliceps.html ]]></fishbase>
+
+
+
+</fish>
+<fish>
+<id>5</id>
+<family>Carangidae</family>
+<scienceName>Caranx heberi (previously C. sem)</scienceName>
+<commonName>Blacktip kingfish, Yellowtail kingfish, Blacktip trevally</commonName>
+<global>Broadly distributed in coastal waters throughout most of the Indo-West Pacific, from the Persian Gulf down to SA, Australia and Fiji islands, but no verified records from the Red Sea (Smith-Vaniz 1984, Smith-Vaniz 2003, Heemstra and Heemstra 2004)</global>
+<zones>EC, KZN, MOZ</zones>
+<saDistro>East coast of SA to Algoa Bay but rare south of KZN (Heemstra and Heemstra 2004)</saDistro>
+
+
+
+<pictureCredit2>FAO</pictureCredit2>
+
+<pictureCredit>Randall, J.E.</pictureCredit>
+
+<picture2>images/Caranxheberi.jpg</picture2>
+<picture>images/Caranxheberi2.gif</picture>
+
+
+<worm><![CDATA[ http://www.marinespecies.org/aphia.php?p=taxdetails&id=218403 ]]></worm>
+<fishbase><![CDATA[ http://www.fishbase.ca/summary/Caranx-heberi.html ]]></fishbase>
+
+
+</fish>
+
+
+</CATALOG>
